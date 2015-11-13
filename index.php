@@ -30,7 +30,7 @@ $http->on('request', function ($request, $response) {
     $dispatcher = Dispatcher::getInstance();
     $answer =  $dispatcher->run($query,$path);
 
-    if (isset($query['param'])) {
+    if (isset($query['param'])) { 
 
         if ($query['param'] == 'time') {
             $answer = microtime(true);
